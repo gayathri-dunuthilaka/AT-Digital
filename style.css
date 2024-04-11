@@ -1,0 +1,382 @@
+/* Custom styles */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #6B3CC9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* White color for brand/logo */
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: #ffffff; /* White color for navbar links */
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000; /* Light gray color on hover for navbar links */
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+/* Responsive Navbar Collapse Animation */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    transition: max-height 0.35s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    max-height: 100vh;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+}
+
+/* Hero Section */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 690px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.text-block {
+  position: absolute;
+  background: linear-gradient(256.73deg, #1CBDDD 27.86%, #4DCA79 100%);
+  width:Fixed (630px);
+  height: Hug (306px)px;
+  top: 354px;
+  left: 80px;
+  padding: 24px 40px 32px 40px;
+  gap: 20px;
+  opacity: 0px;
+}
+
+.text-block h2{
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+.button{
+  background-color: #F28D35;
+  width: Hug (214px)px;
+  height: Hug (38px)px;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;  
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+
+/* Web and consulting Sections Styles */
+
+.half container {
+  width: Hug (1,064px)px;
+  height: Hug (414px)px;
+  top: 857px;
+  left: 188px;
+  gap: 108px;
+  opacity: 0px;  
+}
+
+.web,
+.consulting {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; /* Reverses the order of columns */
+  text-align: center;
+}
+
+.web img,
+.consulting img {
+  max-width: 80%;
+  height: 414px;
+  width: 414px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.web .text-box,
+.consulting .text-box {
+  padding: 110px;
+  width: 800px;
+  height: 500px;
+  text-align: justify;
+}
+
+.web h2,
+.consulting h2 {
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6B3CC9;
+
+}
+
+.web p,
+.consulting p {
+  color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+
+}
+
+.web .btn,
+.consulting .btn {
+  background-color: #F28D35;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.web .btn:hover,
+.consulting .btn:hover {
+  background-color: #4E45E4;
+}
+
+/* Responsive Styles for Columns */
+@media (max-width: 991.98px) {
+  .web,
+  .consulting {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .web .text-box,
+  .consulting .text-box {
+    width: 100%;
+  }
+
+  .web img,
+  .consulting img {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Q&A Section */
+.faq{
+  padding: 60px 0;
+}
+
+.layout{
+  width: Fixed (896px)px;
+  height: Hug (392px)px;
+  top: 1711px;
+  left: 152px;
+  gap: 28px;
+  opacity: 0px;
+}
+
+.layout h2{
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #6B3CC9;
+}
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid #6B3CC9;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+button:hover,
+  button:focus {
+    cursor: pointer;
+    color: #6B3CC9;
+  }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+    }
+      .icon::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+
+      .icon::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+  }
+
+  button[aria-expanded='true'] {
+    color: #6B3CC9;
+    .icon::after {
+      width: 0;
+    }
+  }
+
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+  }
+
+  .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+
+
+/* Footer Styles */
+.site-footer {
+  background-color: #6B3CC9;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.site-footer img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.site-footer p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  
+}
+
+.site-footer h6 {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.41px;
+  text-align: left;
+
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+
+}
+
+.footer-links a:hover {
+  color: #000000;
+}
+
+.footer p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: center;
+}  
+
+
+
+
